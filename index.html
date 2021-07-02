@@ -8,7 +8,50 @@
   </head>
   <body>
     <form id="form-1">
-      <input name="email" type="email" form="form-1" autocomplete="email">
+      <label for="nome">Nome</label>
+      <input type="text"
+      maxlength="12" 
+      name="" 
+      id="nome" 
+      form="form-1"
+      required
+      autocomplete="name"
+      placeholder="Nome"
+      ><br>
+
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text"
+      maxlength="50" 
+      name="" 
+      id="sobrenome" 
+      form="form-1"
+      required
+      autocomplete="name"
+      placeholder="Nome"
+      ><br>
+      
+      <label for="email">E-mail</label>
+      <input id="email" 
+      name="email" 
+      type="email" 
+      size="24"
+      form="form-1" 
+      placeholder="Email" 
+      autocomplete="email" 
+      required><br>
+
+      <label for="senha">Senha</label>
+      <input id="senha" 
+      type="password" 
+      form="form-1"
+      minlength="4"
+      maxlength="8"
+      pattern="[0-9a-fA-F]{4,8}"
+      title="Coloque HEX no mínimo 4 caracteres e no máximo 8"
+      size="11"
+      placeholder="Digite sua senha" 
+      required>
+      <button type="submit">Enviar</button>
     </form>
   </form>
   </body>
